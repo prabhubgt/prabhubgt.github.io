@@ -16,7 +16,7 @@
     <div class="container nav">
       <a class="brand" href="./">
         <img class="brand-logo-img" src="assets/logo.png" alt="Simple Andro logo" />
-        <span>Simple Andro</span>
+        <span class="brand-text"><span class="simp">Simple</span><span class="andro"><span class="A">A</span>ndro</span></span>
       </a>
       <nav>
         <a href="./">Home</a>
@@ -27,8 +27,10 @@
 
   <main>
     <section class="hero container">
-      <img class="logo-hero" src="assets/logo.png" alt="Simple Andro" />
-      <div class="badge"><span class="dot"></span> Made in India • Privacy-first • Lightweight</div>
+      <div class="hero-row">
+        <img class="logo-hero" src="assets/logo.png" alt="Simple Andro" />
+        <div class="badge"><span class="dot"></span> Made in India • Privacy-first • Lightweight</div>
+      </div>
       <h1>Simple, reliable Android apps for everyday business</h1>
       <p>We build thoughtfully designed tools that work offline, respect your privacy, and stay fast on any device. Choose from our suite: Simple Khata, Simple Shop, and Simple CashBook.</p>
       <div class="cta-row">
@@ -37,12 +39,15 @@
       </div>
     </section>
 
-    <section id="apps" class="section container">
+    <section id="apps" class="section container apps-section">
       <h2>Our Apps</h2>
       <div class="grid">
         <!-- Simple Khata -->
         <article class="card">
-          <div class="thumb" aria-hidden="true"></div>
+          <picture class="thumb">
+            <source type="image/webp" srcset="assets/Simple-Khata.webp" />
+            <img class="thumb-img" src="assets/Simple-Khata.png" alt="Simple Khata app screenshot" loading="lazy" />
+          </picture>
           <h3>Simple Khata</h3>
           <p>Ledger and credit book app to track customer balances, payments, and due reminders. Built for speed and clarity.</p>
           <div class="chips">
@@ -58,7 +63,10 @@
 
         <!-- Simple Shop -->
         <article class="card">
-          <div class="thumb" aria-hidden="true"></div>
+          <picture class="thumb">
+            <source type="image/webp" srcset="assets/Simple-Shop.webp" />
+            <img class="thumb-img" src="assets/Simple-Shop.png" alt="Simple Shop app screenshot" loading="lazy" />
+          </picture>
           <h3>Simple Shop</h3>
           <p>Point-of-sale and inventory management for small stores. Quick billing, stock tracking, and invoice history.</p>
           <div class="chips">
@@ -74,7 +82,10 @@
 
         <!-- Simple CashBook -->
         <article class="card">
-          <div class="thumb" aria-hidden="true"></div>
+          <picture class="thumb">
+            <source type="image/webp" srcset="assets/Simple-CashBook.webp" />
+            <img class="thumb-img" src="assets/Simple-CashBook.png" alt="Simple CashBook app screenshot" loading="lazy" />
+          </picture>
           <h3>Simple CashBook</h3>
           <p>Daily income/expense tracker with powerful search and PDF exports. Ideal for personal and small business finances.</p>
           <div class="chips">
